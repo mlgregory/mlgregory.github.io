@@ -51,5 +51,22 @@ table {
 }
 
 /* -----------------END RESET---------------- */
-
+#main-content {
+	background-color:lightgray;
+	font-family:Helvetica;
+	font-size:10px;
+}
+h1 {
+	font-size:20px;
+	font-style:bold;
+}
+h2 {
+	font-color:gray;
+}
+#article1 {
+	float:left;
+}
+#article1 p {
+	width:100px;
+}
 
