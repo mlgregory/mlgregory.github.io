@@ -52,7 +52,13 @@ table {
 
 
 /* END RESET */
-
+body {
+	line-height:150%;
+}
+section {
+	font-family:Helvetica;
+	font-weight:200;
+}
 h1 {
 	font-family:Helvetica;
 	font-size:40px;
@@ -65,11 +71,41 @@ h2 {
 	padding-top:5px;
 }
 h3 {
-	font-size:15px;
-	padding-top:50px;
-	padding-left:30px;
+	font-family:Georgia;
+	font-size:17px;
+	padding-top:20px;
 }
 
 ul{
+	padding-left:30px;
+}
+
+#left_col {
+   float:left;
+   width:500px;
+   padding-top:30px;
+   padding-left:30px;
+   padding-right:20px;
+   
+}
+
+#right_col {
+	float:right;
+	padding-right:100px;
+	max-width:500px;
+	padding-top:60px;
+}
+footer {
+	text-align:right;
+	margin-top:50px
+}
+.directions {
+	list-style-type:decimal;
+	margin-left:20px;
+	padding-left:30px;
+}
+.directions_col2 {
+	list-style-type:decimal;
+	margin-left:20px;
 	padding-left:30px;
 }

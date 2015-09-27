@@ -1,5 +1,3 @@
-
-
 /* Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -63,10 +61,10 @@ h1 {
 h2 {
 	font-color:gray;
 }
-#article1 {
+img {
 	float:left;
 }
-#article1 p {
-	width:100px;
+article{
+	width:500px;
 }
 
