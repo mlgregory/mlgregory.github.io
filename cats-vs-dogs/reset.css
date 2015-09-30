@@ -90,7 +90,8 @@ article {padding: 30px;}
 footer {
 	clear:both;
 	border-top: 2px solid black;
-	margin-top:40px;
+	padding-top:40px;
+	margin:10px;
 }
 h2{
 	font-size:15pt;
