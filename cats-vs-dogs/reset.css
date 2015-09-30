@@ -54,17 +54,34 @@ table {
 
 header{
 	text-align:center;
+	padding-top:10px;
 }
-nav {
+nav li{
 	font-size:20px;
 	font-style:bold;
-}
-li{
 	float:left;
-	margin:15px;
-	border:10px;
-	width:150px;
+	padding:15px;
+}
+
+#maincontent {clear: both;}
+
+article {padding: 30px;}
+
+#cats {
+	width:40%;
+	float:left;
+}
+#dogs {
+	width:40%;
+	float:left;
+}
+
+.li1 {
+	float:left;
+}
+.li2 {
+	float:right;
 }
 footer {
-	float:left;
+	margin:10px;
 }

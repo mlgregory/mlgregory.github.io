@@ -90,7 +90,7 @@ ul{
 }
 
 #right_col {
-	float:right;
+	float:left;
 	padding-right:10px;
 	max-width:500px;
 	padding-top:60px;
