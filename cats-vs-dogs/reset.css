@@ -57,10 +57,14 @@ header{
 	padding-top:10px;
 }
 nav li{
-	font-size:20px;
-	font-style:bold;
+	font-size:20pt;
+	text-transform:uppercase;
 	float:left;
+	list-style-type:disc;
 	padding:15px;
+    list-style-position: inside;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
 }
 
 #maincontent {clear: both;}
@@ -83,5 +87,14 @@ article {padding: 30px;}
 	float:right;
 }
 footer {
+	border-top: 2px solid black;
 	margin:10px;
+}
+h2{
+	font-size:20px;
+	font-style:bold;
+	padding-bottom:5px;
+}
+#skip {
+	list-style-type:none;	
 }
