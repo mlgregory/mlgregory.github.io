@@ -55,6 +55,7 @@ table {
 header{
 	text-align:center;
 	padding-top:10px;
+
 }
 nav li{
 	font-size:20pt;
@@ -67,10 +68,14 @@ nav li{
 	border-bottom:3px solid black;
 	margin-top:40px;
 }
-
+nav {
+	width:800px;
+	margin:0 auto;
+}
 #maincontent {clear: both;}
 
-article {padding: 30px;}
+article {padding: 30px;
+}
 
 #cats {
 	width:40%;
