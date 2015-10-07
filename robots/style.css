@@ -67,13 +67,16 @@ table {
 	text-transform:uppercase;
 }
 #main-menu .first-child {
-	padding-left:40px;
+	padding-left:10%;
 }
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+a, a:hover, a:visited, a:link, a:active {
+	text-decoration:none;
+	list-style:none;
+	color:#774721;
 }
-
+#main-menu li a {
+	color:white;
+}
 #site-wrapper {
 	background-color: #ebf2d8;
 	font-family:Helvetica;
@@ -89,14 +92,19 @@ a:hover, a:visited, a:link, a:active
 	font-size:10px;
 	margin:10px;
 }
+#top-nav li {
+	float:left;
+	padding-left:5px;
+}
 .first {
 	border-right:2px solid #774721;
+	padding-right:5px;
 }
 #site-header img {
 	width:200px;
 	position:absolute;
-	bottom:0px;
-	padding-left:40px;
+	bottom:5px;
+	padding-left:10%;
 }
 
 #footer-wrapper h1 {
@@ -113,7 +121,7 @@ a:hover, a:visited, a:link, a:active
 #footer-contact {
 	position:absolute;
 	bottom:5px;
-	left:40px;
+	left:10%;
 	display:block;
 	width:150px;
 }
@@ -122,13 +130,15 @@ a:hover, a:visited, a:link, a:active
 }
 #footer-follow {
 	position:absolute;
-	bottom:5px;
+	bottom:10px;
 	right:5px;
 }
 #footer-follow ul li {
 	float:left;
 }
-
+#footer-follow h1 {
+	padding-bottom:5px;
+}
 #content-wrapper {
 	position:relative;
 	top:100px;
@@ -148,15 +158,18 @@ a:hover, a:visited, a:link, a:active
 	font-size:15pt;
 	font-family:Helvetica;
 }
+
 #page {
-	position:absolute;
+	float:left;	
 	width:50%;
+	margin-right:5%;
+	margin-left:10%;
+
 }
 #sidebar {
-	position:absolute;
-	right:0px;
-	top:25px;
-	width:40%;
+	float:left;
+	width:30%;
+	margin-right:5%;
 }
 #sidebar h1 {
 	color:#774721;
