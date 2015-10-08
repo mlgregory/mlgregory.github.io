@@ -48,9 +48,71 @@ table {
 }
 
 /* Add Styles Here */
-body { font-family:Times; font-size:14px; }
-section#content { margin:0 auto; width:960px; padding:20px 0px; }
-
-h1 { font-size:48px; font-weight:bold; color:black; text-align:center; }
-h2 { font-size:36px; font-weight:bold; color:black; text-align:center; }
-p { padding-bottom:10px; }
+body { 
+	font-family:Georgia; 
+	font-size:14px; 
+}
+#content { 
+	margin:0 auto; 
+	width:960px; 
+	padding:20px 0px;
+	position:relative;
+}
+h1 { 
+	margin:0 auto; 
+	width:960px; 
+	padding:20px 0px;
+	font-size:48px; 
+	font-weight:bold; 
+	color:black; 
+	text-align:left; 
+}
+h2 { 
+	font-size:30px; 
+	font-weight:bold; 
+	color:black; 
+	position:absolute;
+	top:40px;
+	left:160px;
+}
+h3 {
+	font-size:20px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	top:75px;
+	left:160px;
+	padding-bottom:3px;
+	border-bottom:1px solid black;
+}
+p { 
+	padding-bottom:10px; 
+	position:absolute;
+	top:110px;
+	left:160px;
+	display:inline-block;
+	max-width:40%;
+	
+}
+img { 
+	position:absolute;
+	margin:0 auto; 
+	width:150px; 
+	padding:20px 0px; 
+}
+#p-2 { 
+	padding-bottom:10px; 
+	position:absolute;
+	top:145px;
+	display:inline-block;
+	max-width:40%;
+	
+}
+#p-3 { 
+	padding-bottom:10px; 
+	position:absolute;
+	top:210px;
+	display:inline-block;
+	max-width:40%;
+	
+}
