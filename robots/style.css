@@ -97,7 +97,7 @@ a, a:hover, a:visited, a:link, a:active {
 	padding-left:5px;
 }
 .first {
-	border-right:2px solid #774721;
+	border-right:1px solid #774721;
 	padding-right:5px;
 }
 #site-header img {
@@ -126,7 +126,7 @@ a, a:hover, a:visited, a:link, a:active {
 	width:150px;
 }
 #footer-contact p {
-	color:lightgray;
+	color:white;
 }
 #footer-follow {
 	position:absolute;
