@@ -68,7 +68,7 @@ h1 {
 h2 {
 	font-size:20px;
 	padding-left:32px;
-	padding-top:5px;
+	padding-top:7px;
 }
 h3 {
 	font-family:Georgia;
@@ -111,5 +111,11 @@ footer {
 }
 .viewaspdf {
 	padding-top:10px;
-	padding-left:10px;
+	padding-left:30px;
+	font-family:Helvetica;
+	font-weight:200;
+}
+a {
+	text-decoration:none;
+	color:black;
 }
