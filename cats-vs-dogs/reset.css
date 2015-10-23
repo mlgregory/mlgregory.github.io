@@ -107,3 +107,24 @@ h2{
 	list-style-type:none;	
 }
 
+@media screen and (max-width:1500px){
+    img { max-width:98%;}
+	/*nav {display:block;}*/
+}
+@media screen and (max-width:800px) {
+	nav { display:none;}
+	.li1 { float:none;
+		 	padding-bottom:5px;}
+	.li2 { float:none; }
+}
+@media screen and (max-width:600px) {
+	nav {display:none;}
+	#dogs {float:none;
+			width:70%;
+			margin:0 auto;}
+	#cats {float:none;
+			width:70%;
+			margin:0 auto;}
+	
+
+}
