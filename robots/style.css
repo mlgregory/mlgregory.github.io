@@ -67,7 +67,7 @@ table {
 	text-transform:uppercase;
 }
 #main-menu .first-child {
-	padding-left:10%;
+	padding-left:15%;
 }
 a, a:hover, a:visited, a:link, a:active {
 	text-decoration:none;
@@ -91,6 +91,7 @@ a, a:hover, a:visited, a:link, a:active {
 	right:5px;
 	font-size:10px;
 	margin:10px;
+	padding-right:5%;
 }
 #top-nav li {
 	float:left;
