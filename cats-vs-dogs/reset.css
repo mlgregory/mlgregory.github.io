@@ -57,21 +57,25 @@ header{
 	padding-top:10px;
 
 }
+nav {
+	width:800px;
+	height:60px;
+	margin:0 auto;
+	border-top:3px solid black;
+	border-bottom:3px solid black;	
+	margin-top:40px;
+}
 nav li{
 	font-size:20pt;
-	text-transform:uppercase;
 	float:left;
+	text-transform:uppercase;	
+	list-style-type:disc;
 	list-style-type:disc;
 	padding:15px;
     list-style-position: inside;
-	border-top:3px solid black;
-	border-bottom:3px solid black;
-	margin-top:40px;
-}
-nav {
-	width:800px;
 	margin:0 auto;
 }
+
 #maincontent {clear: both;}
 
 article {padding: 5%;
@@ -97,7 +101,7 @@ article {padding: 5%;
 }
 #li2 {
 	clear:both;
-	float:left;
+	float:right;
 }
 .li2 {
 	float:right;
@@ -107,6 +111,7 @@ article {padding: 5%;
 	float:right;
 	padding-right:5px;
 }
+
 footer {
 	clear:both;
 	border-top: 2px solid black;
@@ -127,26 +132,36 @@ h2{
 	/*nav {display:block;}*/
 }
 @media screen and (max-width:800px) {
-	nav li { 
-		border:3px solid white;
-		font-size:1em;
-		
-		
+	nav li {float:none;
+		width:80%;
+		margin:0 auto;
+		list-style-type:none;
+		font-size:18pt;
 	}
-	.li1 { float:none;
-		 	padding-bottom:5px;}
-	.li2 { float:none; }
+	nav {
+		margin:0 auto;
+		border-top:2px solid black;
+		border-bottom:2px solid black;	
+		margin-top:40px;
+		width:80%;		
+		height:280px;
+	}
 }
 @media screen and (max-width:600px) {
 	nav {
-		display:none;
+		border-top:0px solid black;
+		border-bottom:0px solid black;
+		height:80px;	
 	}
+	nav li {
+		font-size:15pt;
+		display:inline; }
+		
 	#dogs {float:none;
 			width:70%;
 			margin:0 auto;}
 	#cats {float:none;
 			width:70%;
 			margin:0 auto;}
-	
 
 }
