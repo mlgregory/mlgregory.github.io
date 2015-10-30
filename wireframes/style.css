@@ -49,6 +49,7 @@ table {
 
 /* Add Styles Here */
 body { 
+	background-color:grey;
 	font-family:Helvetica; 
 }
 #content { 
@@ -66,10 +67,14 @@ h2 {
 	font-size:20px; 
 	font-weight:200; 
 	color:lightgray;  
-	padding-top:30px;}
+	padding-top:30px;
+	padding-bottom:10px;}
 
 img {
 	width:50%;
  	transform: rotate(90deg);
 	margin:10%;
+}
+#wires img {
+	transform:none;
 }
