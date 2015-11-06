@@ -53,17 +53,14 @@ table {
 /* -----------------END RESET---------------- */
 
 header{
-	text-align:center;
-	padding-top:10px;
-
-}
+	text-align:center; }
 nav {
 	width:800px;
 	height:60px;
 	margin:0 auto;
 	border-top:3px solid black;
 	border-bottom:3px solid black;	
-	margin-top:40px;
+	margin-top:30px;
 }
 nav li{
 	font-size:20pt;
@@ -164,4 +161,44 @@ h2{
 			width:70%;
 			margin:0 auto;}
 
+}
+#header-logo li {
+	display:inline;
+}
+#dogs-header {
+	font-family:LeagueGothic-CondensedRegular;
+    font-size: 8em;
+    text-transform: uppercase;
+	padding-top:10px;
+}
+
+#vs-outline {
+	padding-top:25px;
+	padding-bottom:13px;
+	border-top:1px solid lightgrey;
+	border-bottom:1px solid lightgrey;
+	margin-right:10px;
+	margin-left:10px;
+	position:relative;
+	top:-30px;
+}
+#vs-header {
+	font-family: Georgia;
+	color:lightgrey;
+	font-style:italic;
+	font-weight:bold;
+	font-size:3em;
+	text-transform:lowercase;
+	border-top:3px solid lightgrey;
+	border-bottom:3px solid lightgrey;
+	padding-bottom:12px;
+
+}
+
+#cats-header {
+    font-family: LeagueGothic-CondensedRegular;
+    font-size: 8em;
+    text-transform: uppercase;
+	padding-top:10px;
+	
 }
