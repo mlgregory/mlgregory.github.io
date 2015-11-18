@@ -3,6 +3,23 @@
   <head>
 	  <title>DOGS vs CATS</title>
 	  <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+	  <!-- Add jQuery library -->
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	  <!-- Add mousewheel plugin (this is optional) -->
+	  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	  <!-- Add fancyBox -->
+	  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	  <!-- Optionally add helpers - button, thumbnail and/or media -->
+	  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>	 
 	  <style>
 @font-face {
         font-family: LeagueGothic-CondensedRegular;
@@ -14,6 +31,7 @@
 }
 
 </style>
+
   </head>
   <body>
 	  <header>
@@ -34,12 +52,12 @@
 	</header>
 	<section id="maincontent">
 		<article id='dogs'>
-				<img src="images/dog.gif" alt="derp dog"/>
+				<a class="fancybox" rel="group" href="images/dog.gif"> <img src="images/dog.gif" alt="derp dog"/></a>
 			<h2>Dogs Have Better Noses</h2>
 			<p>Dogs can discriminate odors at concentrations nearly 100 million times lower than humans can. The wet nose is essential for determining the direction of the air current containing the smell. Cold receptors in the skin are sensitive to the cooling of the skin by evaporation of the moisture by air currents.</p>
 		</article>
 		<article id="cats">
-			<img src="images/cat.gif" alt="ugly-cat" />
+			<a class="fancybox" rel="group" href="images/cat.gif"> <img src="images/cat.gif" alt="ugly-cat" /></a>
 			<h2>Cats Have Better Tongues</h2>
 			<p>Cats are known for their cleanliness, spending many hours licking their coats. The cat's tongue has backwards-facing spines about 500 micrometers long, which are called papillae. These are quite rigid, as they contain keratin. These spines allow cats to groom themselves by licking their fur, with the rows of papillae acting like a hairbrush. </p>
 		</article>
@@ -51,6 +69,11 @@
 				<li class='li2'>copyright ©2011 </li> 
 				<li class='li21'> martha rettig</li>
 		</ul>
-	</footer>			  
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>			  
   </body>
 </html>
