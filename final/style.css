@@ -51,6 +51,11 @@ table {
 }
 
 /* END RESET */
+header {
+	position:fixed;
+	background-color:lightgrey;
+	width:100%;
+}
 #header-wrapper {
 	background-color:lightgrey;
 	height:100px;
@@ -83,7 +88,7 @@ a {
 }
 #footer-wrapper {
 	background-color:lightgrey;
-	height:100px;
+	height:50px;
 	position:relative;
 }
 #left-side {
@@ -104,4 +109,40 @@ a {
 }
 #right-side img {
 	height:30px;
+}
+#about img {
+	width:200px;
+}
+#home-portfolio {
+	height:700px;
+	background-color:orange;
+}
+#home-portfolio img {
+	width:200px;
+	margin:10px;
+}
+.title {
+	font-family:Helvetica;
+	color:black;
+}
+#BRING  {
+	float:left;
+}
+#HOWTOPLAYWINE img {
+	clear:both;
+	float:left;
+}
+#WHATWENTWRONG img {
+	float:left;
+}
+#RESPOND img {
+	float:left;
+}
+#home-quote {
+	background-color:teal;
+	height:700px;
+}
+#home-about {
+	height:700px;
+	background-color:purple;
 }
