@@ -51,13 +51,15 @@ table {
 }
 
 /* END RESET */
+body {
+}
 header {
 	position:fixed;
-	background-color:lightgrey;
+	background-color:#4990A6;
 	width:100%;
 }
 #header-wrapper {
-	background-color:lightgrey;
+	background-color:#046380;
 	height:100px;
 	position:relative;
 }
@@ -87,8 +89,9 @@ a {
 	text-decoration:none;
 }
 #footer-wrapper {
-	background-color:lightgrey;
+	background-color:#4990A6;
 	height:50px;
+	clear:both;
 	position:relative;
 }
 #left-side {
@@ -146,3 +149,52 @@ a {
 	height:700px;
 	background-color:purple;
 }
+.page-title {
+	font-family:Helvetica;
+	font-size:45px;
+	margin:10px;
+	
+}
+#about-leftside {
+	background-color:lightgrey;
+	padding:10px;
+	float:left;
+	width:20%;
+	height:300px;
+	line-height:20px;
+	font-family:Georgia;
+	font-size:16px;
+	margin-left:5%;
+}
+#about-leftside p {
+	margin-top:20%;
+}
+#about-rightside h2 {
+	margin-top:20%;
+}
+#about-middle img {
+	width:35%;
+	float:left;
+	margin-left:2%;
+    -webkit-filter: sepia(5%);
+
+}
+#about-rightside {
+	background-color:lightgrey;
+	width:20%;
+	padding:10px;
+	height:300px;
+	line-height:20px;
+	font-family:Georgia;
+	font-size:16px;
+	float:left;
+	margin-left:2%;
+}
+
+.skills {
+	font-weight:600;
+}
+h2 {
+	font-family:Helvetica;
+}
+
