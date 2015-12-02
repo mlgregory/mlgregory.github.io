@@ -63,14 +63,22 @@ header {
 	height:100px;
 	position:relative;
 }
-#site-header img {
-	height:100px;
+#logo img {
+	width:100px;
 	float:left;
+	padding-left:10px;
 }
 #header-nav {
 	position:absolute;
 	right:30px;
 	top:40px;
+}
+#name-title {
+	position:absolute;
+	top:35px;
+	left:120px;
+	color:#002F2F;
+	font-family:Georgia;
 }
 #name {
 	padding-top:35px;
