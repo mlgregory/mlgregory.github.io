@@ -136,6 +136,9 @@ footer {
 	padding:0;
 	margin:0 5px 10px 5px;
 }
+#work ul li {
+	position:absolute;
+}
 #work {
     padding:0;
 	list-style:none;
@@ -154,6 +157,7 @@ footer {
 	margin:0 5px 10px 5px;
 	width:47.5%;
 }
+
 .title {
 	font-family:Helvetica;
 	color:black;
@@ -174,6 +178,17 @@ footer {
 	font-family:Georgia;
 	font-size:16px;
 	margin-left:5%;
+}
+#work-leftside {
+	background-color:lightgrey;
+	padding:10px;
+	display:inline-block;	
+	width:80%;
+	line-height:20px;
+	font-family:Georgia;
+	font-size:16px;
+	margin-left:5%;
+	margin-bottom:2%;
 }
 #about-leftside p {
 	margin-top:20%;
@@ -225,7 +240,22 @@ h2 {
 	opacity:0.4;
 	filter:alpha(opacity:40);
 }
-.blur {
-	cursor:pointer;
-	width:47.5%;	
+
+#work img {
+		opacity:1.0;
+		filter:alpha(opacity=100);
+	}
+#work img:hover {
+		opacity:0.4;
+		filter:alpha(opacity:40);
+	}
+#images-calendar img {
+		width:20%;
+		margin-right:10px;
+	}
+#images-calendar {
+		margin-left:5%;
+	}
+#video-dataas {
+		margin:5px;
 	}
