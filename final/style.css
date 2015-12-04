@@ -256,6 +256,15 @@ h2 {
 #images-calendar {
 		margin-left:5%;
 	}
+#images-wayfnding {
+		margin-left:5%;
+	}	
+#images-wayfnding img {
+	width:30%;
+}	
 #video-dataas {
-		margin:5px;
-	}
+	margin-left:20%;
+}
+#video-narras {
+	margin-left:20%;
+}
