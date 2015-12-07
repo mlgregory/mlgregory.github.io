@@ -51,8 +51,7 @@ table {
 }
 
 /* END RESET */
-body {
-}
+/*-----header----*/
 header {
 	position:fixed;
 	background-color:#4990A6;
@@ -96,6 +95,7 @@ a {
 	font-family:Helvetica;
 	text-decoration:none;
 }
+/*-----footer----*/
 footer {
 	position:fixed;
 	bottom:0px;
@@ -145,6 +145,7 @@ footer {
 	margin:20px auto 0;
 	width:100%; 
 }
+/*-----home page----*/
 #home-portfolio {
     padding:0;
 	list-style:none;
@@ -159,10 +160,34 @@ footer {
 }
 
 .title {
-	font-family:Helvetica;
-	color:black;
+	position:absolute;
+	overflow:hidden;
+	width:100%;	
 }
-
+.caption {
+	position:absolute;
+	left:0px;
+	background-color:white;
+	opacity:0;
+	width:48%;
+	height:100%;
+	
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.title {
+	font-size:1.2em;
+	color:black;
+	position:absolute;
+	top:40%;
+	text-align:center;
+}
+.caption-style-2:hover .caption{
+	margin-bottom:0;
+	opacity:.9;
+}
 .page-title {
 	font-family:Helvetica;
 	font-size:45px;
@@ -226,19 +251,6 @@ footer {
 }
 h2 {
 	font-family:Helvetica;
-}
-
-.caption-text {
-	position:absolute;
-
-}
-.caption-style-2 img {
-	opacity:1.0;
-	filter:alpha(opacity=100);
-}
-.caption-style-2 img:hover {
-	opacity:0.4;
-	filter:alpha(opacity:40);
 }
 
 #work img {
