@@ -95,7 +95,12 @@ a {
 	font-family:Helvetica;
 	text-decoration:none;
 }
-
+#links img{
+	width:30px;
+	float:left;
+	margin:2%;
+	padding-left:2%;
+}
 /*-----home page----*/
 #home-portfolio {
     padding:0;
@@ -236,6 +241,12 @@ h2 {
 }	
 #video-dataas {
 	margin-left:20%;
+}
+#video-bring video{
+	margin-left:15%;
+}
+#video-bring {
+	height:640px;
 }
 #video-narras {
 	margin-left:20%;
