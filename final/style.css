@@ -54,11 +54,11 @@ table {
 /*-----header----*/
 header {
 	position:fixed;
-	background-color:#4990A6;
+	background-image:url("images/header.jpg");
+	background-color: #cccccc;
 	width:100%;
 }
 #header-wrapper {
-	background-color:#046380;
 	height:100px;
 	position:relative;
 }
@@ -95,56 +95,7 @@ a {
 	font-family:Helvetica;
 	text-decoration:none;
 }
-/*-----footer----*/
-footer {
-	position:fixed;
-	bottom:0px;
-	height:50px;
-	width:100%;
-	background-color:#4990A6;
-}
 
-#footer-wrapper {
-	clear:both;
-	position:relative;
-}
-#left-side {
-	position:absolute;
-	left:35px;
-	bottom:10px;
-	line-height:120%;
-	font-size:12px;
-}
-#right-side {
-	position:absolute;
-	right:10px;
-	bottom:10px;
-}
-#right-side ul li {
-	float:left;
-	padding-right:25px;
-}
-#right-side img {
-	height:30px;
-}
-#about img {
-	width:200px;
-}
-#work img {
-	width:30.83%;
-	float:left;
-	padding:0;
-	margin:0 5px 10px 5px;
-}
-#work ul li {
-	position:absolute;
-}
-#work {
-    padding:0;
-	list-style:none;
-	margin:20px auto 0;
-	width:100%; 
-}
 /*-----home page----*/
 #home-portfolio {
     padding:0;
@@ -164,12 +115,19 @@ footer {
 	overflow:hidden;
 	width:100%;	
 }
+.caption-style-2 {
+	position:relative;
+	width:100%;
+	float:left;
+	margin:20px auto 0;	
+	
+}
 .caption {
 	position:absolute;
-	left:0px;
+	left:5px;
 	background-color:white;
 	opacity:0;
-	width:48%;
+	width:47.5%;
 	height:100%;
 	
 	-webkit-transition: all 0.3s ease-out;
@@ -178,7 +136,7 @@ footer {
 	transition: all 0.3s ease-out;
 }
 .title {
-	font-size:1.2em;
+	font-size:1em;
 	color:black;
 	position:absolute;
 	top:40%;
@@ -188,6 +146,8 @@ footer {
 	margin-bottom:0;
 	opacity:.9;
 }
+
+
 .page-title {
 	font-family:Helvetica;
 	font-size:45px;
