@@ -121,11 +121,9 @@ a {
 	width:100%;	
 }
 .caption-style-2 {
-	position:relative;
-	width:100%;
 	float:left;
-	margin:20px auto 0;	
-	
+	position:relative;
+	width:100%;	
 }
 .caption {
 	position:absolute;

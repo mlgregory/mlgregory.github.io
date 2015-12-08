@@ -3,6 +3,23 @@
 	<head>
 		<title>Mikayla's Work</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
@@ -28,8 +45,8 @@
 				<p>Choose a client within a sector of your choice and design a visual identity system that includes a dynamic mark that responds to a set of data. For this project I chose to work with the New England Revolution soccer team. This team is one of 22 in Major League Soccer in the US. Founded in 1996, the team created a freef lowing flag logo with a soccer ball to hold the stars. It has been sloghtly modified over the years. The team is the only one without a crest for a logo. A project for Graphic Design IV at MassArt.</p>
 			</section> <!-- end #leftside -->
 		<section id='images-respond'>
-			<img src='images/respond/logo.jpg' alt='responsivelogo'/> 	
-			<img src='images/respond/logo_away.jpg' alt='awayresponsivelogo'/> 	
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/respond/logo.jpg" ><img src='images/respond/logo.jpg' alt='responsivelogo'/> 	
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/respond/logo_away.jpg" ><img src='images/respond/logo_away.jpg' alt='awayresponsivelogo'/> 	
 			<video width='500' height='375' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen controls>
 				<source src='images/respond/RevsRespnsive.m4v' type='video/mp4'>
 
@@ -40,5 +57,22 @@
 	</section>
 	
 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox-thumb").fancybox({
+				prevEffect	: 'none',
+				nextEffect	: 'none',
+				helpers	: {
+					title	: {
+						type: 'outside'
+					},
+					thumbs	: {
+						width	: 50,
+						height	: 50
+					}
+				}
+			});
+		});
+	</script>
 	</body>
 </html>
