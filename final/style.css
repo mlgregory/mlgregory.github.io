@@ -170,7 +170,7 @@ header a {
 }
 
 .page-title {
-	font-family:Helvetica;
+	font-family:'Quicksand', sans-serif;
 	font-size:45px;
 	margin:30px;	
 }
@@ -277,6 +277,13 @@ h2 {
 #images-whatwent img {
 	width:45%;
 	margin:2%;
+}
+#images-gasp img{
+	width:20%;
+	margin:1%;
+}
+#images-gasp {
+	margin-left:10px;
 }
 #about {
 	margin-top:2%;

@@ -3,13 +3,35 @@
 	<head>
 		<title>Mikayla's Work</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	</head>
+  	  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  	  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+  		<!-- Add jQuery library -->
+  		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  		<!-- Add mousewheel plugin (this is optional) -->
+  		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  		<!-- Add fancyBox -->
+  		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  		<!-- Optionally add helpers - button, thumbnail and/or media -->
+  		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+  	</head>
+
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
 		  <header id='site-header'>
-			  <h2> <a href='http://mlgregory.github.io/final'><img src="../images/logo.gif" alt='logo'/></a></h2>
+			  <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo.gif" alt='logo'/></a></h2>
+		<section id='name'>
 			  <h3 id='header-name'>Mikayla Gregory</h3>
 			  <h4 id='occupation'>Designer/Letterer</h4>
+		  </section>
 			  <nav id='header-nav'>
 				 <ul>
 				 <li><a href='http://mlgregory.github.io/final/work'> WORK </a></li>
@@ -22,17 +44,38 @@
 	
 	<div id='about'> <!-- start #portfolio -->
 		<h1 class='page-title'> GASP </h1>
-			<section id='about-leftside'><!-- start #leftside -->
+			<section id='work-leftside'><!-- start #leftside -->
 				<p>A book combining three pieces of writing all focused on the theme of drowning/suffocation. To show both sides of the coin, I paired Houdini's last trick letter on his coffin in a pool tirck, which touches upon lose of air and fear of drowning. Along side this I chose a letter by a trapped miner, his letter is his final words to his family. The third piece to tie it all togeter is the stages of drowning. I brought these particular stories together to show multiple ideas of loose of air and concisousess. The book has some pages white with black type and others have black pages with black type, showing the fading of conciousness as the perosn loses air while writing their letters. A project for Typography III at MassArt. </p>
 			</section> <!-- end #leftside -->
 		<section id='images-gasp'>
-			<img src='INSERT IMAGES HERE' alt='gasp'/> 	
-		</section>
-	</div> <!-- end #portfolio -->
-	<section class='backtoportfolio'>
-		<a href='http://mlgregory.github.io/final/work'><p>&lt; Back to Work</p></a>
-	</section>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp.gif" ><img src='images/gasp/gasp.gif' alt='Gasp Cover'/> 		
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp1.gif" ><img src='images/gasp/gasp1.gif' alt='Gasp Opening Page'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp2.gif" ><img src='images/gasp/gasp2.gif' alt='Gasp Spread Spasm'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp3.gif" ><img src='images/gasp/gasp3.gif' alt='Gasp Spread Water in Lungs'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp4.gif" ><img src='images/gasp/gasp4.gif' alt='Gasp Spread Remember Me'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp5.gif" ><img src='images/gasp/gasp5.gif' alt='Gasp Spread GoodBye'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/gasp/gasp6.gif" ><img src='images/gasp/gasp6.gif' alt='Gasp Breathe Closing Spread'/> 	 	 	 	 	 	
 	
+			</section>	
+	</div> <!-- end #portfolio -->
 
+	
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox-thumb").fancybox({
+				prevEffect	: 'none',
+				nextEffect	: 'none',
+				helpers	: {
+					title	: {
+						type: 'outside'
+					},
+					thumbs	: {
+						width	: 50,
+						height	: 50
+					}
+				}
+			});
+		});
+	</script>
 	</body>
 </html>
