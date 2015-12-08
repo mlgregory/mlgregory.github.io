@@ -252,3 +252,8 @@ h2 {
 #video-narras {
 	margin-left:20%;
 }
+#images-howtoplay img {
+	width:20%;
+	margin:2%;
+    -webkit-filter: grayscale(30%);	
+}

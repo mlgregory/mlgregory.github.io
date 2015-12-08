@@ -3,6 +3,23 @@
 	<head>
 		<title>Mikayla's Work</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
@@ -28,12 +45,32 @@
 				<p>This project was a sound and instructional project. First we had to create a instrument, wine glasses, and then create a one minute sound sequence. The next step of this project was to create instructions so any user could replicate the sequence. We made a core case set of instructions as well as an edge case. Both instruction sets include a warm up section, practice section, followed by the sequence instructions. A project for Design Research at MassArt.</p>
 			</section> <!-- end #leftside -->
 		<section id='images-howtoplay'>
-			<img src='INSERT IMAGES HERE' alt='howtoplay'/> 	
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/core1.jpg" ><img src='images/sound/core1.jpg' alt='howtoplay cover'/> 
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/core2.jpg" ><img src='images/sound/core2.jpg' alt='howtoplay how to'/> 
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/core3.jpg" ><img src='images/sound/core3.jpg' alt='howtoplay learning to produce sound'/> 	
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/core4.jpg" ><img src='images/sound/core4.jpg' alt='howtoplay practice'/> 
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/core5.jpg" ><img src='images/sound/core5.jpg' alt='howtoplay sequence'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/edge5.jpg" ><img src='images/sound/edge5.jpg' alt='howtoplay edge extra practice'/>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sound/edge6.jpg" ><img src='images/sound/edge6.jpg' alt='howtoplay edge sequence'/> 	 	 				
 		</section>
 	</div> <!-- end #portfolio -->
-	<section class='backtoportfolio'>
-		<a href='http://mlgregory.github.io/final/work'><p>&lt; Back to Work</p></a>
-	</section>
 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox-thumb").fancybox({
+				prevEffect	: 'none',
+				nextEffect	: 'none',
+				helpers	: {
+					title	: {
+						type: 'outside'
+					},
+					thumbs	: {
+						width	: 50,
+						height	: 50
+					}
+				}
+			});
+		});
+	</script>
 	</body>
 </html>
