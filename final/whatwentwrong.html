@@ -3,6 +3,23 @@
 	<head>
 		<title>Mikayla's Work</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
@@ -25,16 +42,33 @@
 	<div id='about'> <!-- start #portfolio -->
 		<h1 class='page-title'> What Went Wrong </h1>
 			<section id='work-leftside'><!-- start #leftside -->
-				<p>Goal was to design a clear visual explaination for what has gone wrong with police brutality and race in the US. Policing and race relations in the United States has been all over the news this past year. Questions about police accountability, racial bias and profiling, the role of civilians, the “thin blue line,” and an “us against them” mentality on the part of both civilians and police all contrib-ute to this massive national crisis. What is the role of social media? This is a complex, rich issue to examine. I wanted to show how the media's variety of coverage for cases has skewed the perspective of people's idea of racial profiling in the police department. A project for Graphic Design IV at MassArt.</p>
+				<p>Goal was to design a clear visual explaination for what has gone wrong with police brutality and race in the US. Policing and race relations in the United States has been all over the news this past year. Questions about police accountability, racial bias and profiling, the role of civilians, the &quot;thin blue line, &quot; and an &quot;us against them &quot; mentality on the part of both civilians and police all contribute to this massive national crisis. What is the role of social media? This is a complex, rich issue to examine. I wanted to show how the media's variety of coverage for cases has skewed the perspective of people's idea of racial profiling in the police department. A project for Graphic Design IV at MassArt.</p>
 			</section> <!-- end #leftside -->
 		<section id='images-whatwent'>
-			<img src='INSERT IMAGES HERE' alt='whatwentwrong'/> 	
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/www.gif" ><img src='images/www.gif' alt='What Went Wrong Poster'/> 
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/wwwposter.gif" ><img src='images/wwwposter.gif' alt='What Went Wrong Poster Open'/> 
 		</section>
 	</div> <!-- end #portfolio -->
 	<section class='backtoportfolio'>
 		<a href='http://mlgregory.github.io/final/work'><p>&lt; Back to Work</p></a>
 	</section>
 	
-
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox-thumb").fancybox({
+				prevEffect	: 'none',
+				nextEffect	: 'none',
+				helpers	: {
+					title	: {
+						type: 'outside'
+					},
+					thumbs	: {
+						width	: 50,
+						height	: 50
+					}
+				}
+			});
+		});
+	</script>
 	</body>
 </html>

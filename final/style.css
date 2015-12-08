@@ -250,10 +250,18 @@ h2 {
 	height:640px;
 }
 #video-narras {
-	margin-left:20%;
+	margin-left:5%;
+}
+#video-narras img {
+	width:80%;
+	margin-bottom:2%;
 }
 #images-howtoplay img {
 	width:20%;
 	margin:2%;
     -webkit-filter: grayscale(30%);	
+}
+#images-whatwent img {
+	width:45%;
+	margin:2%;
 }
