@@ -292,3 +292,75 @@ h6 {
 	font-size:2em;
 	padding-top:5px;
 }
+.navigation {
+	display:none;
+}
+.nav-trigger {
+	display:none;
+}
+@media screen and (max-width:740px) {
+	#logo img {
+		width:50px;
+	}
+	header {
+		height:50px;
+	}
+	#header-nav {
+		position:absolute;
+		right:30px;
+		top:15px;
+	}
+	#name {
+		padding-top:15px;
+		font-family: 'Quicksand', sans-serif;	
+		line-height:100%;
+		font-size:.75em;
+	}
+	#header-wrapper {
+		height:50px;
+	}
+}
+@media screen and (max-width:640px) {
+	.caption-style-2 {
+		float:left;
+		position:relative;
+		left:5%;
+		margin:1%;
+		width:85%;	
+	}
+	#name {
+		display:none;
+	}
+	.hide {
+		font-family: 'Quicksand', sans-serif;	
+		font-size:1.2em;
+		color:teal;
+	}
+	.hide:hover {
+		cursor:pointer;
+	}
+	.nav li {
+		clear:both;
+	}
+
+	.nav {
+		width:200px;
+		background-color:lightgray;
+		padding:10px;
+		padding-left:0px;
+		padding-top:10px;
+		position:fixed;
+		top:0px;
+		right:0px;
+		z-index:1;
+	}
+	.nav-trigger {
+		display:inline;
+		height:25px;
+		position:absolute;
+		top:10px;
+		right:10px;
+		z-index:20;
+	}
+
+}
