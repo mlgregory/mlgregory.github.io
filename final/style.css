@@ -202,12 +202,13 @@ header a {
 	background-color:lightgrey;
 	padding:10px;
 	display:inline-block;	
-	width:80%;
+	width:85%;
 	line-height:20px;
 	font-family: 'Quicksand', sans-serif;	
 	font-size:16px;
 	margin-left:5%;
 	margin-bottom:2%;
+	margin-top:3%;
 }
 #about-leftside p {
 	margin-top:10%;
@@ -314,10 +315,11 @@ h6 {
 }
 #projects {
 	margin:20px;
+	width:100%;
 	position:relative;
 }
 #previous-project {
-	font-size:1em;
+	font-size:.75em;
 	font-family: 'Quicksand', sans-serif;
 	position:absolute;
 	
@@ -326,8 +328,10 @@ h6 {
 	color:lightgray;
 }
 #next-project {
-	font-size:1em;
+	font-size:.75em;
 	font-family: 'Quicksand', sans-serif;
+	position:absolute;
+	right:5%;
 }
 #next-project a {
 	color:lightgray;

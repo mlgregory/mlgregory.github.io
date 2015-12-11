@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mikayla's Work</title>
+		<title>Data as Narrative</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
   	  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   	  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<link rel="icon" type="image/gif" sizes="16x16" href="images/logo-01.gif">
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
-		  <header id='site-header'>
-			  <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
+		  <header id='site-header' >
+			 <label for="nav-trigger-label"></label>
+			  
+			 <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
 			  <section id='name'>
 			  <h3 id='header-name'>Mikayla Gregory</h3>
 			  <h4 id='occupation'>Designer/Letterer</h4>
-		  </section>
+		  </section>	
+				<input type="image" src='images/hamburgicon.gif' alt="menu" id="nav-trigger" class="nav-trigger" />
 			  <nav id='header-nav'>
-				 <ul>
-				 <li><a href='http://mlgregory.github.io/final'> WORK </a></li>
-				 <li><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
-				 <li><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
-			 </ul>
+				 <ul class='nav'>
+					 <li class='hide'>X</li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final'> WORK </a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
+				 </ul>
+				
 			</nav> 
+			<div class="overlay"></div>
 		</header>
 	</div> <!-- end #header -->
 	
 	<div id='about'> <!-- start #portfolio -->
 		<h1 class='page-title'> DATA AS NARRATIVE </h1>
+		<section id='projects'>
+			<div id='previous-project'> <p><a href='gasp.html'> &lt; previous project</a> </p> </div>
+		<div id='next-project'> <p><a href='narrativeasdata.html'>  next project &gt;</a> </p> </div>
 			<section id='work-leftside'><!-- start #leftside -->
 				<p>After researching and collecting data for over 100 sideshow performers, we designed an interactive website and book to show all of the many characteristics we used to describe and compare the performers. A project for Information Architecture II at MassArt. </p>	
 			</section> <!-- end #leftside -->
@@ -37,6 +48,15 @@
 		<a href='http://mlgregory.github.io/final/work'><p>&lt; Back to Work</p></a>
 	</section>
 	
-
+<script>
+$(document).ready(function(){
+	$('#nav-trigger').click(function(){
+		$('.nav').show();
+	});
+	$('.hide').click(function(){
+		$('.nav').hide();
+	});
+});
+</script>
 	</body>
 </html>

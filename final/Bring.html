@@ -22,30 +22,38 @@
 
 		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<link rel="icon" type="image/gif" sizes="16x16" href="images/logo-01.gif">
+		
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
-		  <header id='site-header'>
-			  <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
+		  <header id='site-header' >
+			 <label for="nav-trigger-label"></label>
+			  
+			 <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
 			  <section id='name'>
 			  <h3 id='header-name'>Mikayla Gregory</h3>
 			  <h4 id='occupation'>Designer/Letterer</h4>
-		  </section>
+		  </section>	
+				<input type="image" src='images/hamburgicon.gif' alt="menu" id="nav-trigger" class="nav-trigger" />
 			  <nav id='header-nav'>
-				 <ul>
-				 <li><a href='http://mlgregory.github.io/final'> WORK </a></li>
-				 <li><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
-				 <li><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
-			 </ul>
+				 <ul class='nav'>
+					 <li class='hide'>X</li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final'> WORK </a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
+				 </ul>
+				
 			</nav> 
+			<div class="overlay"></div>
 		</header>
 	</div> <!-- end #header -->
 	
 	<div id='about'> <!-- start #portfolio -->
 		<h1 class='page-title'> BRING </h1>
 		<section id='projects'>
-			<div id='previous-project'> <p><a href='whatwentwrong.html'> &lt; previous project</a> </p> </div>
-		<div id='next-project'> <p><a href='calendar.html'> &gt; next project</a> </p> </div>
+			<div id='previous-project'> <p><a href='calendar.html'> &lt; previous project</a> </p> </div>
+		<div id='next-project'> <p><a href='howtoplay.html'>  next project &gt;</a> </p> </div>
 	</section>
 			<section id='work-leftside'><!-- start #leftside -->
 				<p>Have you ever been locked out of your apartment? Forget your midterm the day its due? Well here's your solution! Introducing Bring! A service that reminds you of your essential items before you leave. With a beacon placed above your door, Bring will notify you of what items you wanted fo rthe day. If you don't have your phone the beacon will sound with a noise. If you do have your phone it'll send you your essentials list to remind you to grab what you need for the day. This was a team project consisting of Mikayla Gregory, Rachel LaDine, Andrea Thoen, and Amy Szatkowski. A project for Design Research at MassArt.</p>
@@ -77,5 +85,15 @@
 			});
 		});
 	</script>
+		<script>
+		$(document).ready(function(){
+			$('#nav-trigger').click(function(){
+				$('.nav').show();
+			});
+			$('.hide').click(function(){
+				$('.nav').hide();
+			});
+		});
+		</script>
 	</body>
 </html>

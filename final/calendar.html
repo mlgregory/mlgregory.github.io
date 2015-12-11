@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mikayla's Work</title>
+		<title>Calendar</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
   	  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   	  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
@@ -22,27 +22,37 @@
 
 		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<link rel="icon" type="image/gif" sizes="16x16" href="images/logo-01.gif">
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
-		  <header id='site-header'>
-			  <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
+		  <header id='site-header' >
+			 <label for="nav-trigger-label"></label>
+			  
+			 <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
 			  <section id='name'>
 			  <h3 id='header-name'>Mikayla Gregory</h3>
 			  <h4 id='occupation'>Designer/Letterer</h4>
-		  </section>
+		  </section>	
+				<input type="image" src='images/hamburgicon.gif' alt="menu" id="nav-trigger" class="nav-trigger" />
 			  <nav id='header-nav'>
-				 <ul>
-				 <li><a href='http://mlgregory.github.io/final'> WORK </a></li>
-				 <li><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
-				 <li><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
-			 </ul>
+				 <ul class='nav'>
+					 <li class='hide'>X</li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final'> WORK </a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
+				 </ul>
+				
 			</nav> 
+			<div class="overlay"></div>
 		</header>
 	</div> <!-- end #header -->
 	
 	<div id='about'> <!-- start #portfolio -->
 		<h1 class='page-title'> Calendar </h1>
+		<section id='projects'>
+			<div id='previous-project'> <p><a href='wayfinding.html'> &lt; previous project</a> </p> </div>
+		<div id='next-project'> <p><a href='Bring.html'>  next project &gt;</a> </p> </div>
 			<section id='work-leftside'><!-- start #leftside -->
 				<p>A three spread calendar project, with cover titled How to PreFix Him. The concept for this piece was to show to the relationship between men and women. Shining a light on the stereotypes that are in our society and showing how absurd they truly are. A project for Graphic Design II at MassArt.</p>
 			</section> <!-- end #leftside -->
@@ -75,5 +85,15 @@
 		});
 	});
 </script>
+	<script>
+	$(document).ready(function(){
+		$('#nav-trigger').click(function(){
+			$('.nav').show();
+		});
+		$('.hide').click(function(){
+			$('.nav').hide();
+		});
+	});
+	</script>
 	</body>
 </html>

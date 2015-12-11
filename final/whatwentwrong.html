@@ -22,27 +22,38 @@
 
 		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<link rel="icon" type="image/gif" sizes="16x16" href="images/logo-01.gif">
+		
 	</head>
 	<body>
 		  <div id='header-wrapper'> <!-- start #header -->
-		  <header id='site-header'>
-			  <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
+		  <header id='site-header' >
+			 <label for="nav-trigger-label"></label>
+			  
+			 <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
 			  <section id='name'>
 			  <h3 id='header-name'>Mikayla Gregory</h3>
 			  <h4 id='occupation'>Designer/Letterer</h4>
-		  </section>
+		  </section>	
+				<input type="image" src='images/hamburgicon.gif' alt="menu" id="nav-trigger" class="nav-trigger" />
 			  <nav id='header-nav'>
-				 <ul>
-				 <li><a href='http://mlgregory.github.io/final'> WORK </a></li>
-				 <li><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
-				 <li><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
-			 </ul>
+				 <ul class='nav'>
+					 <li class='hide'>X</li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final'> WORK </a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
+				 <li class='nav-item'><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
+				 </ul>
+				
 			</nav> 
+			<div class="overlay"></div>
 		</header>
 	</div> <!-- end #header -->
 	
 	<div id='about'> <!-- start #portfolio -->
 		<h1 class='page-title'> What Went Wrong </h1>
+		<section id='projects'>
+			<div id='previous-project'> <p><a href='howtoplay.html'> &lt; previous project</a> </p> </div>
+		<div id='next-project'> <p><a href='responsivelogo.html'>  next project &gt;</a> </p> </div>
 			<section id='work-leftside'><!-- start #leftside -->
 				<p>Goal was to design a clear visual explaination for what has gone wrong with police brutality and race in the US. Policing and race relations in the United States has been all over the news this past year. Questions about police accountability, racial bias and profiling, the role of civilians, the &quot;thin blue line, &quot; and an &quot;us against them &quot; mentality on the part of both civilians and police all contribute to this massive national crisis. What is the role of social media? This is a complex, rich issue to examine. I wanted to show how the media's variety of coverage for cases has skewed the perspective of people's idea of racial profiling in the police department. A project for Graphic Design IV at MassArt.</p>
 			</section> <!-- end #leftside -->
@@ -72,5 +83,15 @@
 			});
 		});
 	</script>
+		<script>
+		$(document).ready(function(){
+			$('#nav-trigger').click(function(){
+				$('.nav').show();
+			});
+			$('.hide').click(function(){
+				$('.nav').hide();
+			});
+		});
+		</script>
 	</body>
 </html>
