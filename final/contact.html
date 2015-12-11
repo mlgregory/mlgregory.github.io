@@ -5,28 +5,35 @@
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
   	  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   	  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</head>
 	<body>
-		  <div id='header-wrapper'> <!-- start #header -->
-		  <header id='site-header'>
-			  <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
-			  <span id='name-title'>
-			  <h3 id='header-name'>Mikayla Gregory</h3>
-			  <h4 id='occupation'>Designer/Letterer</h4>
-			  </span>
-			  <nav id='header-nav'>
-				 <ul>
-				 <li><a href='http://mlgregory.github.io/final'> WORK </a></li>
-				 <li><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
-				 <li><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
-			 </ul>
-			</nav> 
-		</header>
+  		  <div id='header-wrapper'> <!-- start #header -->
+  		  <header id='site-header'>
+  			 <label for="nav-trigger-label"></label>
+			  
+  			 <h2> <a href='http://mlgregory.github.io/final' id='logo'><img src="images/logo-02.png" alt='logo'/></a></h2>
+  			  <section id='name'>
+  			  <h3 id='header-name'>Mikayla Gregory</h3>
+  			  <h4 id='occupation'>Designer/Letterer</h4>
+  		  </section>	
+  				<input type="image" src='images/hamburgicon.gif' alt="menu" id="nav-trigger" class="nav-trigger" />
+  			  <nav id='header-nav'>
+  				 <ul class='nav'>
+  					 <li class='hide'>X</li>
+  				 <li class='nav-item'><a href='http://mlgregory.github.io/final'> WORK </a></li>
+  				 <li class='nav-item'><a href='http://mlgregory.github.io/final/about'> ABOUT</a></li>
+  				 <li class='nav-item'><a href='http://mlgregory.github.io/final/contact'> CONTACT</a></li>
+  				 </ul>
+				
+  			</nav> 
+  			<div class="overlay"></div>
+  		</header>
 	</div> <!-- end #header -->
 	<div id='about'>
 		<h1 class='page-title'> Contact Mikayla </h1>
 		
-		<section id='about-leftside'><!-- start #leftside -->
+		<section id='contact-leftside' ><!-- start #leftside -->
 			<h6>HIYA!</h6>
 			<p>Want to say hello? Give me a piece of your mind? Remind me os something you know I will forget? Want some spice in your life? Think I could give you advice? Let me know, get in contact with me via email or on social media!</p>
   			<ul id='links'>
@@ -54,6 +61,15 @@
 				<li>978-888-3610</li>
 			</ul>
 		</section> 
-
+<script>
+$(document).ready(function(){
+	$('#nav-trigger').click(function(){
+		$('.nav').show();
+	});
+	$('.hide').click(function(){
+		$('.nav').hide();
+	});
+});
+</script>
 		</body>
 	</html>
