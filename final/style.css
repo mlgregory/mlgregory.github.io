@@ -287,7 +287,7 @@ h2 {
 #images-howtoplay img {
 	width:20%;
 	margin:2%;
-    -webkit-filter: grayscale(30%);	
+    -webkit-filter: grayscale(40%);	
 }
 #images-whatwent img {
 	width:45%;
@@ -434,6 +434,40 @@ h6 {
 		margin-bottom:2%;
 		margin-left:5%;
 	}
+	#work-leftside {
+		line-height:18px;
+		font-family: 'Quicksand', sans-serif;	
+		font-size:14px;
+		margin-left:2%;
+		margin-bottom:0%;
+		margin-top:3%;
+	}
+	#video-bring video{
+		margin-left:5%;
+	}
+	#images-howtoplay img {
+		width:40%;
+		margin:2%;
+	    -webkit-filter: grayscale(40%);	
+	}
+	#images-gasp img{
+		width:40%;
+		margin:1%;
+	}
+	#images-gasp {
+		margin-left:2%;
+	}
+	#video-dataas {
+		margin-left:2%;
+		margin-top:2%;
+	}
+	#images-calendar img {
+			width:40%;
+			margin:2%;
+		}
+	#images-calendar {
+			margin-left:2%;
+		}
 
 }
 @media screen and (max-width:640px) {
