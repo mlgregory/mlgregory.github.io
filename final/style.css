@@ -54,7 +54,7 @@ table {
 /*-----header----*/
 header {
 	position:fixed;
-	background-image:url("images/header.jpg");
+	background-image:url("images/header.gif");
 	background-color: #cccccc;
 	width:100%;
 	z-index:20;
@@ -311,6 +311,27 @@ h6 {
 }
 .nav-trigger {
 	display:none;
+}
+#projects {
+	margin:20px;
+	position:relative;
+}
+#previous-project {
+	font-size:1em;
+	font-family: 'Quicksand', sans-serif;
+	position:absolute;
+	
+}
+#previous-project a {
+	color:lightgray;
+}
+#next-project {
+	font-size:1em;
+	font-family: 'Quicksand', sans-serif;
+}
+#next-project a {
+	color:lightgray;
+
 }
 @media screen and (max-width:900px) {
 	#about-leftside {
