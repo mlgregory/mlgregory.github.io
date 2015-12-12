@@ -568,3 +568,6 @@ h6 {
 		margin:2%;
 	}	
 }
+input#nav-trigger:focus {
+	outline: none;
+}
